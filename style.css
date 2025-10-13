@@ -1,0 +1,108 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    cursor: default;
+}
+
+/*#principal{
+
+}*/
+
+#titulo{
+    text-align: center; /* Centraliza o texto */
+    color: #2d3436; /* Cor do texto */
+}
+
+#placar{
+    display: flex; /* Adiciona flexbox */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+}
+
+#jogador, #computador{ 
+    position: relative; /* Necessário para posicionar o placar */
+    flex-grow: 1; /* Faz os elementos ocuparem o máximo de espaço possível */
+    color: #fff; /* Cor do texto branca */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+}
+
+#jogador h2, #computador h2{ 
+    margin: 0;
+    padding: 0;
+}
+
+#jogador{
+    background-color: #e74c3c;
+}
+
+#jogador-nome, #computador-nome{
+    font-size: 24px; /* Tamanho da fonte médio */
+}
+
+#computador-nome{
+    text-align: right; /* Alinha o nome à direita */
+}
+
+#jogador-pontos, #computador-pontos{
+    position: absolute; /* Posição absoluta para sobrepor o texto */
+    top: 8px;
+    font-size: 52px; /* Tamanho da fonte grande */
+}
+
+#jogador-pontos{
+    right: 20px; /* Alinha à direita */
+}
+
+#jogador #jogador-escolha, #computador #computador-escolha {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    list-style: none; /* Remove os marcadores da lista */
+    text-align: center; /* Centraliza o conteúdo. Foi alinhado pois os "bullets" são como textos, aí facilita */ 
+    margin: 25px 0 0 0; /* Espaçamento acima da lista */;
+}
+
+#jogador #jogador-escolha li, #computador #computador-escolha li {
+    display: inline; /* Exibe os itens da lista em linha */;
+    padding: 0 15px; /* Espaçamento entre os itens */
+}
+
+#jogador #jogador-escolha a, #computador #computador-escolha a {
+    transition: all .5s; /* Adiciona uma transição suave */
+    opacity: .2; /* Torna a imagem semi-transparente */
+
+}
+
+#jogador #jogador-escolha a:hover,
+#jogador #jogador-escolha a.selecionado, #computador #computador-escolha a.selecionado{ 
+    opacity: 100%; /* Torna a imagem totalmente opaca ao passar o mouse */
+    transition: all .2s; /* Adiciona uma transição suave */
+
+}
+
+#jogador #jogador-escolha a img, #computador #computador-escolha a img {
+    max-width: 80px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    box-shadow: 10px 1px 20px #000; /* Adiciona uma sombra ao redor da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+#versus{
+    font-size: 48px; /* Tamanho da fonte grande */
+    padding: 0 40px; /* Espaçamento horizontal */
+    color: #2d3436; /* Cor do texto */
+}
+
+#computador{
+    background-color: #3498db;
+}
+
+#mensagem{
+    background-color: #2d3436;
+    text-align: center; /* Centraliza o texto */
+    font-size: 24px; /* Tamanho da fonte médio */
+    color: #fff; /* Cor do texto branca */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+    padding: 20px;
+}
